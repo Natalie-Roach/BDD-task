@@ -16,10 +16,6 @@ public class DataHelper {
         return new AuthInfo("vasya","qwerty123");
     }
 
-    public static AuthInfo getWrongInfo(AuthInfo original) {
-        return new AuthInfo("petya", "qwerty999");
-    }
-
     @Value
     public static class VerificationCode {
         private String code;
