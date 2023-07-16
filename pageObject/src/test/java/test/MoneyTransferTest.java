@@ -90,7 +90,7 @@ public class MoneyTransferTest {
         }
 
         @Test
-        public void shouldNotTransferMoneyMoreThanBalance() {
+        public void shouldNotTransferMoneyMoreThanABalance() {
                 var dashboardPage = new DashboardPage();
                 String aboveBalance = String.valueOf(dashboardPage.getCardBalance("1") + 10000);
                 int expectedFirstCardBalance = dashboardPage.getCardBalance("1");
